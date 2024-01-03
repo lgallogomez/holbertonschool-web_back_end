@@ -4,6 +4,7 @@
 Type-annotated function add
 '''
 
+
 def add(a: float, b: float) -> float:
     '''
     function adds 2 floats
