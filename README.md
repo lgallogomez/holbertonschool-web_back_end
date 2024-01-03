@@ -1,0 +1,1 @@
+This project contains excercises related to the concept of Variable Annotations including Type annotattions, Duck typing and validation code with mypy library. 
