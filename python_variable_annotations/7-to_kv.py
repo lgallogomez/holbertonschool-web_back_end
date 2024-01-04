@@ -13,5 +13,5 @@ def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     function returns Tuple, first str, second float
     of square value of v
     '''
-    tupla: Tuple[str, float] = (k, v*v)
-    return tupla
+    return (k, v*v)
+    
