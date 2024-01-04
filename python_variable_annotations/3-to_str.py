@@ -7,6 +7,6 @@ type-annotated function to_str
 
 def to_str(n: float) -> str:
     '''
-    function adds 2 floats
+    function converts a float into a string
     '''
     return str(n)
