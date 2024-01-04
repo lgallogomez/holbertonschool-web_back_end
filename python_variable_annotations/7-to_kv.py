@@ -9,9 +9,9 @@ from typing import Tuple, Union
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-	'''
-	function returns Tuple, first str, second float
-	of square value of v
-	'''
-	tupla: Tuple[str, float] = (k, v*v)
-	return tupla
+    '''
+    function returns Tuple, first str, second float
+    of square value of v
+    '''
+    tupla: Tuple[str, float] = (k, v*v)
+    return tupla
