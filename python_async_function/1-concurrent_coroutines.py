@@ -16,11 +16,10 @@ async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     uses wait_rando n times
     '''
     delays_list = []
-    insertion_point = 0
+    idx = 0
     for i in range(n):
         delay_time = await wait_random(max_delay)
-        
-        while insertion_point < len(delays_list) and delay_time > delays_list[insertion_point]:
-            insertion_point += 1
-        delays_list.insert(insertion_point, delay_time)
+        while idx < len(delays_list) and delay_time > delays_list[idx]:
+            idx += 1
+        delays_list.insert(idx, delay_time)
     return delays_list
