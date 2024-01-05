@@ -1,0 +1,1 @@
+This project contains excercises working with python asyncio module, in order to understand the concept of asynchronous programming style. 
