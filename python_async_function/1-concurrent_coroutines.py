@@ -5,8 +5,6 @@ programs contains a coroutine
 '''
 
 
-import asyncio
-import random
 from typing import List
 
 
