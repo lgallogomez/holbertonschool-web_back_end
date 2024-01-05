@@ -17,7 +17,6 @@ async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     '''
     does n times
     '''
-    i = 0
     my_list = []
     for i in range(n):
         delay_time = random.uniform(0, max_delay)
