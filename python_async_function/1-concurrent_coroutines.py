@@ -4,7 +4,7 @@
 programs contains a coroutine
 '''
 
-
+import asyncio
 from typing import List
 
 
@@ -17,8 +17,11 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     '''
     delays_list = []
 
-    for i in range(n):
-        delay_time = await wait_random(max_delay)
-        delays_list.append(delay_time)
-
-    return sorted(delays_list)
+    all_tasks = [wait_random(max_delay) for i in range(n)]
+    
+    #starts all wait_random iterations at same time concurrently
+    for one_task in asyncio.as_completed(all_tasks):
+        one_delayed_time = await one_task
+        delays_list.append(one_delayed_time)
+    
+    return delays_list
