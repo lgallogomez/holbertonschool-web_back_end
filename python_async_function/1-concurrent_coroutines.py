@@ -21,5 +21,6 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     for one_task in asyncio.as_completed(all_tasks):
         # starts all wait_random iterations at same time concurrently
         one_delayed_time = await one_task
-        delays_list.append(one_delayed_time)
+        delays_list.append(one_delayed_time)    
     return delays_list
+    

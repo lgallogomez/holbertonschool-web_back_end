@@ -18,7 +18,8 @@ async def measure_time(n: int, max_delay: int) -> float:
     measures execution time for wait_n function
     '''
     start_time = time.perf_counter()
-    await wait_n(n, max_delay)
+    task =  asyncio.create_task(wait_n(n, max_delay))
+    await task
     finished_time = time.perf_counter()
     total_time = finished_time - start_time
     return total_time / n
