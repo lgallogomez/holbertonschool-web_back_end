@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-corotutine loops 10 times, waits 1 sec, and yield a 
+corotutine loops 10 times, waits 1 sec, and yield a
 random # between 0 - 10
 '''
 
