@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 
-import asyncio
-import random
-
 '''
 corotutine loops 10 times, waits 1 sec, and yield a 
 random # between 0 - 10
 '''
 
 
-async def async_generator():
+import asyncio
+import random
+
+
+async def async_generator() -> Generator[float, None, None]:
     '''
     creates a values in async context
     '''
