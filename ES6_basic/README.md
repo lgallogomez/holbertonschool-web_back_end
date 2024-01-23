@@ -1,0 +1,1 @@
+This project is all about working on basic excercises using Javascript and the ES6 standards.
