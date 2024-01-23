@@ -209,4 +209,6 @@ dist
 .history
 .ionide
 
+*main*
+
 # End of https://www.toptal.com/developers/gitignore/api/linux,node,macos,visualstudiocode
