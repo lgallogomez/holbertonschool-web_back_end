@@ -1,0 +1,1 @@
+This project is all about working with classes using Javascript, nodejs and lint. 
