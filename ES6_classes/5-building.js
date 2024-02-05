@@ -1,14 +1,13 @@
-export default class Building  {
+//revisar que cada edificio 
+export default class Building {
   constructor(sqft) {
-    if (this)
-    this._sqft = sqft
+    if (new.target !== Building && typeof(this.evacuationWarningMessage) !== 'function') { //new.target or this.constructor = who's my created me.
+      throw new Error('Class extending Building must override evacuationWarningMessage');
+    }
+    this._sqft = sqft;
   }
 
   get sqft() {
-    return this_sqft;
-  }
-
-  set sqft(sqft) {
-    this._sqft = sqft;
+    return this._sqft;
   }
 }
