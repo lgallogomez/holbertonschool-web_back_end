@@ -4,7 +4,8 @@ export default class Car {
     this._motor = motor;
     this._color = color;
   }
+
   cloneCar() {
-    return(new this.constructor()); //build me new instance, using the constructor os the current object 
+    return (new this.constructor());
   }
 }
